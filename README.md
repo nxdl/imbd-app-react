@@ -13,7 +13,7 @@ IMDB API docs: https://www.themoviedb.org/documentation/api
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://giphy.com/embed/FfhfwXkdYzw4Zb73mq' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://giphy.com/embed/FfhfwXkdYzw4Zb73mq
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
