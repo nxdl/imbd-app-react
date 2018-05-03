@@ -5,7 +5,6 @@ import { Container } from 'bloomer';
 import 'bulma/css/bulma.css';
 import MoviesList from './MoviesList';
 
-
 class App extends Component {
 
   constructor(props) {
@@ -24,18 +23,19 @@ class App extends Component {
       this.setState({ movies: this.movies })
     }
     this.setState({
+      allMovies: this.movies,
       movies: this.movies,
       loading: false
     });
   }
 
   filterMovies(filterText) {
-    const currentMovies = this.state.movies;
-    const filteredMovies = currentMovies.filter(
+    const allMovies = this.state.allMovies;
+    const filteredMovies = allMovies.filter(
       m => m.title.toLowerCase().indexOf(filterText) !== -1
     )
     if (filterText == 0) {
-      this.setState({ movies: this.movies })
+      this.setState({ movies: allMovies })
     } else {
       this.setState({
         movies: filteredMovies
